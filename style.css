@@ -29,7 +29,7 @@ main : #56C8EA
 
 html{
     font-size: 62.5%;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 body{
@@ -74,6 +74,7 @@ header{
     transition: .3s ease;
 }
 
+
 .navbar a:hover,.navbar a.active{
     color: var(--main);
 }
@@ -84,15 +85,20 @@ header{
     display: none;
 }
 
+span{
+    color: var(--main);
+}
+
 .accueil{
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 10rem;
 }
 
 .accueil-contenu{
+    min-width: 400px;
     max-width: 700px;
-    margin-right: 40px;
 }
 
 .accueil-contenu h3{
@@ -138,6 +144,49 @@ header{
 }
 
 .accueil-photo img{
-    width: 40vw;
+    width: 30vw;
 }
 
+.apropos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20rem;
+    background-color: var(--background2);;
+}
+
+.apropos-photo img{
+    width: 25vw;
+}
+
+.entete{
+    text-align: center;
+    font-size: 4.5rem;
+}
+
+.entete span{
+    color: var(--main);
+}
+
+.apropos-contenu{
+    min-width: 400px;
+    max-width: 700px;
+}
+
+.apropos-contenu h2{
+    text-align: left;
+    line-height: 1.2;
+}
+
+.apropos-contenu h3{
+    font-size: 2.6rem;
+}
+
+.apropos-contenu p{
+    font-size: 1.6rem;
+    margin: 2rem 0 3rem;;
+}
+
+.competences h2{
+    margin-bottom: 5rem;
+}
