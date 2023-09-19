@@ -190,3 +190,18 @@ span{
 .competences h2{
     margin-bottom: 5rem;
 }
+
+.competences{
+    min-height: auto;
+    padding-bottom: 7rem;
+}
+
+.competences .competences-ligne{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+
+.competences-ligne .competences-colonne{
+}
+
