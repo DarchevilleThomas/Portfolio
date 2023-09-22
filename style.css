@@ -156,7 +156,16 @@ span{
 }
 
 .apropos-photo img{
+    display: flex;
     width: 30vw;
+    margin-bottom: 2rem;
+}
+
+.apropos-photo{
+    font-size: 1.7rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
 .entete{
@@ -381,4 +390,70 @@ span{
     color: var(--background2);
 }
 
+.contact h2{
+    margin: 0 0 3rem 0;
+}
 
+.contact form{
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.contact form .input-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact form .input-box input, .contact form textarea{
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: var(--texte);
+    background-color: var(--background2);
+    border-radius: 0.8rem;
+    margin: 0.7rem 0;
+}
+
+.contact form .input-box input{
+    width: 49%;
+}
+
+.contact form textarea{
+    resize: none;
+}
+
+.contact form .button{
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+.footer{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 9%;
+    background-color: var(--background2);
+}
+
+.icone-fleche a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.8rem;
+    background-color: var(--main);
+    border-radius: 0.8rem;
+    transition: 0.5s ease;
+}
+
+.icone-fleche a:hover{
+    box-shadow: 0 0 1rem var(--main);
+}
+
+.icone-fleche a i{
+    font-size: 2.4rem;
+    color: var(--background2);
+}
