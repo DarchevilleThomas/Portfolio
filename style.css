@@ -119,7 +119,6 @@ span{
 
 .accueil-contenu p{
     font-size: 1.6rem;
-    margin-bottom: 3rem;
 }
 
 .accueil-contenu h3:nth-of-type(2){
@@ -145,6 +144,20 @@ span{
 
 .accueil-photo img{
     width: 30vw;
+}
+
+.social-media a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background: transparent;
+    border: 0.2rem solid var(--main);
+    border-radius: 50%;
+    font-size: 2rem;
+    color: var(--main);
+    margin: 3rem 1.5rem 3rem 0;
 }
 
 .apropos{
