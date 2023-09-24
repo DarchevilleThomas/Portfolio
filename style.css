@@ -158,6 +158,12 @@ span{
     font-size: 2rem;
     color: var(--main);
     margin: 3rem 1.5rem 3rem 0;
+    transition: 0.3s ease;
+}
+
+.social-media a:hover{
+    background-color: var(--main);
+    color: white;
 }
 
 .apropos{
@@ -349,13 +355,13 @@ span{
 }
 
 .portfolio-contenu .portfolio-box img{
-    filter: grayscale(80%);
+    filter: grayscale(90%);
     width: 100%;
+    transition: 2s;
 }
 
 .portfolio-contenu .portfolio-box:hover img{
     transform: scale(1.1);
-
 }
 
 .portfolio-box .portfolio-box-info{
@@ -364,7 +370,7 @@ span{
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgba(0,0,0,0.1),var(--main));
+    background: linear-gradient(rgba(86, 200, 234,0.3),var(--main));
     display: flex;
     justify-content: center;
     align-items: center;
