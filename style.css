@@ -215,6 +215,12 @@ span{
     margin: 2rem 0 3rem;;
 }
 
+.apropos-contenu p a{
+    color: var(--texte);
+    font-size: 1.6rem;
+    margin: 2rem 0 3rem;;
+}
+
 .competences h2{
     margin-bottom: 5rem;
 }
