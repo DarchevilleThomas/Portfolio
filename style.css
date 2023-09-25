@@ -163,7 +163,8 @@ span{
 
 .social-media a:hover{
     background-color: var(--main);
-    color: white;
+    color: var(--background2);
+    box-shadow: 0 0 1rem var(--main);
 }
 
 .apropos{
