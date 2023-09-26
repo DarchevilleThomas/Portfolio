@@ -105,7 +105,6 @@ span{
 }
 
 .accueil-contenu{
-    min-width: 400px;
     max-width: 700px;
 }
 
@@ -206,7 +205,6 @@ span{
 }
 
 .apropos-contenu{
-    min-width: 400px;
     max-width: 700px;
 }
 
@@ -513,6 +511,12 @@ footer{
         padding: 2rem 3%;
     }
 
+    .portfolio {
+        padding-bottom: 7rem;
+    }
+
+
+
 
 }
 
@@ -586,5 +590,38 @@ footer{
         grid-template-columns: repeat(2,1fr);
     }
 
-    
+    footer{
+        justify-content: center;
+    }
+
+}
+
+@media (max-width: 617px) {
+    .portfolio-contenu{
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+
+    .contact form .input-box input{
+        width: 100%;
+    }
+
+
+
+}
+
+@media (max-width: 375px) {
+    .accueil-photo img{
+        width: 90vw;
+    }
+
+    .apropos-photo img{
+        width: 90vw;
+    }
 }
