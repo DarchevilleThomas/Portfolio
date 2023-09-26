@@ -84,6 +84,7 @@ header{
     font-size: 3.6rem;
     color: var(--texte);
     display: none;
+    cursor: pointer;
 }
 
 #check{
@@ -527,11 +528,12 @@ footer{
         width: 100%;
         height: 0;
         padding-left: 3%;
-        background-color: var(--background);
+        background-color: rgba(31, 36, 45, 0.2);
         border-top: 0.1rem solid rgba(0, 0, 0, .2);
         box-shadow: 0 0.5rem 1rem solid rgba(0, 0, 0, .2);
         transition: 0.3s ease;
         overflow: hidden;
+        backdrop-filter: blur(50px);
     }
 
     .navbar a{
@@ -551,4 +553,38 @@ footer{
     #check:checked~.navbar{
         height: 34rem;
     }
+
+
+    .accueil{
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .accueil-contenu h3 {
+        font-size: 2.6rem;
+    }
+
+    .accueil-photo img{
+        width: 60vw;
+    }
+
+    .apropos{
+        flex-direction: column-reverse;
+        gap: 3rem;
+    }
+    
+    .apropos-photo img{
+        width: 50vw;
+    }
+
+
+    .portfolio h2{
+        margin-bottom: 3rem;   
+    }
+
+    .portfolio-contenu{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    
 }
