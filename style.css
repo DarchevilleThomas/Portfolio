@@ -53,6 +53,8 @@ header{
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+    border-bottom: 0.1rem solid rgba(0, 0, 0, .2);
+
 }
 
 .logo{
@@ -78,9 +80,15 @@ header{
     color: var(--main);
 }
 
-#icone-menu{
+#icone-menu , #icone-menu-fin{
     font-size: 3.6rem;
     color: var(--texte);
+    display: none;
+}
+
+#check{
+    position: absolute;
+    right: 5%;
     display: none;
 }
 
@@ -455,7 +463,7 @@ span{
     cursor: pointer;
 }
 
-.footer{
+footer{
     display: flex;
     justify-content: right;
     align-items: center;
@@ -481,4 +489,66 @@ span{
 .icone-fleche a i{
     font-size: 2.4rem;
     color: var(--background2);
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1200px) {
+    html{
+        font-size: 55%;
+    }
+}
+
+@media (max-width: 991px){
+    header {
+        padding: 2rem 3%;
+    }
+
+    section {
+        padding: 10rem 3% 2rem;
+    }
+
+    footer{
+        padding: 2rem 3%;
+    }
+
+
+}
+
+@media (max-width: 768px){
+    #icone-menu{
+        display: block;
+    }
+
+    .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 0;
+        padding-left: 3%;
+        background-color: var(--background);
+        border-top: 0.1rem solid rgba(0, 0, 0, .2);
+        box-shadow: 0 0.5rem 1rem solid rgba(0, 0, 0, .2);
+        transition: 0.3s ease;
+        overflow: hidden;
+    }
+
+    .navbar a{
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+
+    #check:checked~.icons #icone-menu{
+        display: none;
+    }
+
+    #check:checked~.icons #icone-menu-fin{
+        display: block;
+    }
+
+    #check:checked~.navbar{
+        height: 34rem;
+    }
 }
