@@ -490,6 +490,10 @@ footer{
     color: var(--background2);
 }
 
+
+
+/* SCROLLBAR */
+
 ::-webkit-scrollbar{
     width: 15px;
 }
