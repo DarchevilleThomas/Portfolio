@@ -368,7 +368,7 @@ span{
 }
 
 .portfolio-contenu .portfolio-box img{
-    filter: grayscale(90%);
+    filter: grayscale(60%);
     width: 100%;
     transition: 2s;
 }
@@ -606,7 +606,8 @@ footer{
 
 
     .portfolio h2{
-        margin-bottom: 3rem;   
+        margin-bottom: 3rem;
+
     }
 
     .portfolio-contenu{
