@@ -325,7 +325,7 @@ span{
     width: 92%;
 }
 .competences-colonne:nth-child(2) .competences-contenu .competences-niveau:nth-child(6) .bar span{
-    width: 100%;
+    width: 50%;
 }
 
 .competences-colonne:nth-child(3) .competences-box .competences-contenu{
