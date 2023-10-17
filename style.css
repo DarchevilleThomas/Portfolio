@@ -126,6 +126,7 @@ span{
 
 .accueil-contenu p{
     font-size: 1.6rem;
+    line-height: 1.8;
 }
 
 .accueil-contenu h3:nth-of-type(2){
